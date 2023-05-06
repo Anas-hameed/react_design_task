@@ -3,14 +3,24 @@ import './index.css';
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 
+import { useState, createContext } from 'react';
+
+
+const ThemeContext = createContext('light');
 
 // Landing Page Component
 const LandingPage = () => {
+
+    const [theme, setTheme] = useState('light');
+
     return (
-        <section className="flex landing__page text-white" >
-            <LeftSection />
-            <RightSection />
-        </section>
+
+        <ThemeContext.Provider value={theme}>
+            <section className="flex landing__page text-white" >
+                <LeftSection />
+                <RightSection />
+            </section>
+        </ThemeContext.Provider>
     );
 }
 

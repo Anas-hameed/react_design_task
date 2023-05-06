@@ -1,0 +1,24 @@
+/* Left Side Styling goes here */
+.left__side {
+    background-color: #23252e;
+    padding: 4rem;
+    flex: .60;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.left__date {
+    font-size: small;
+}
+
+.left__heading {
+    max-width: 500px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.left__details {
+    max-width: 500px;
+    font-size: small;
+}
+

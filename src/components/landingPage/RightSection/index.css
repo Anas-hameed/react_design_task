@@ -10,6 +10,13 @@
     justify-content: space-between;
 }
 
+.theme_light_right{
+
+    background-color: #fff; 
+    color: black;
+
+}
+
 /* Toggle btn */
 .switch {
     position: relative;

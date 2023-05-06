@@ -17,8 +17,8 @@ const LandingPage = () => {
 
         <ThemeContext.Provider value={theme}>
             <section className="flex landing__page text-white" >
-                <LeftSection />
-                <RightSection />
+                <LeftSection theme={theme} />
+                <RightSection theme={theme} setTheme={setTheme} />
             </section>
         </ThemeContext.Provider>
     );

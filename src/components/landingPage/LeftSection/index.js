@@ -4,9 +4,9 @@ import './index.css';
 
 
 // Left Section Design Element Goes Here
-const LeftSection = () => {
+const LeftSection = ({theme}) => {
     return (
-        <div className='left__side flex justify-end'>
+        <div className={`left__side flex justify-end${theme==='dark'?'theme_dark_left':'theme_light_left'}`}>
 
             <div>
 

@@ -4,15 +4,24 @@ import Icons from '../../../media/images/Icons.png';
 import './index.css';
 
 // Right Section Design Element Goes Here
-const RightSection = () => {
+const RightSection = ({theme, setTheme}) => {
+
+    const toogleMode = () => {
+        if (theme === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }
+
 
     return (
-        <div className='right__side'>
+        <div className={`right__side ${theme==='dark'?'theme_dark_right':'theme_light_right'}`}>
             {/* toogle btn */}
             <div className="toggler__section flex item-center justify-end">
                 <p>Light</p>
                 <label className="switch">
-                    <input type="checkbox" />
+                    <input type="checkbox" onClick={toogleMode} />
                     <span className="slider round"></span>
                 </label>
                 <p>Dark</p>

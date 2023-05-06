@@ -6,8 +6,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install' 
+  - To install the dependecies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+And Then
+
+### `npm start`
+  - Runs the app in the development mode.\
+  - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  
+  
+## Website Deployment Link 
+  - you can check the deployment at https://reactdesigntask.netlify.app/ or <a href="https://reactdesigntask.netlify.app/">Click Here</a>
 
